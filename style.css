@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(images/spices.jpg) no-repeat;
+  background: #bccf8f url(images/spices.jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
@@ -13,13 +13,50 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 4.75em 0.625em 0;
+  padding: 1em 1.65em 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #e4ebd7;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9em 1.4em;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 325px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
 }
 
 #search {
   width: 100%;
   padding: 0.75em 1.25em;
-  border: 1px solid #ddd;
+  border: 1px solid #e4ebd7;
   margin-bottom: 0.75em;
   outline: none;
 }
@@ -29,12 +66,16 @@ body {
 }
 
 #list li {
-  border: 1px solid #ddd;
-  padding: 0.75em;
+  border: 1px solid #e4ebd7;
+  padding: 0.55em 1.25em;
   background-color: #f6f6f6;
   display: block;
 }
 
 #list li:hover {
   background-color: #eee;
+}
+
+.show {
+  display: block;
 }

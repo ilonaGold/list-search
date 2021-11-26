@@ -1,5 +1,12 @@
+const btn = document.getElementById("dropbtn");
+btn.addEventListener("click", showList);
+
 const input = document.getElementById("search");
 input.addEventListener("keyup", search);
+
+function showList() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
 function search() {
     const inputVal = input.value;
@@ -13,3 +20,4 @@ function search() {
         }
     }
 }
+
